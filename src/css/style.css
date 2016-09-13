@@ -1,0 +1,130 @@
+body {
+  background-color: #fff;
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+.img-full {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.relative {
+  position: relative;
+}
+
+h1 {
+  color: #1680a7;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+#topo {
+  background: url("../img/bg-topo.png") center top;
+  height: 202px;
+  padding: 20px 0 0;
+  position: relative;
+}
+
+.logo {
+  width: 203px;
+  height: 122px;
+  margin: 0 50px 0;
+  display: block;
+  float: left;
+}
+
+.logo-link {
+  background: url("../img/logo.png") left top no-repeat;
+  width: 203px;
+  height: 122px;
+  display: block;
+  font-size: 0;
+  font-size: 0;
+}
+
+.mini-menu {
+  background: url("../img/ico-menu.png") #00a9a9 no-repeat center;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  left: 30px;
+  display: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#menu,
+.menu-list {
+  margin-top: 50px;
+  float: left;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-link {
+  color: #fff;
+  margin-right: 20px;
+  padding: 20px;
+  font-family: "din-bold";
+  font-size: 25px;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    color: #1680a7;
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    color: #1680a7;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    color: claro$azul-;
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
