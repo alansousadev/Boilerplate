@@ -39,7 +39,7 @@
 - **Csscomb** - 
 
 
-#EXTENSÕES
+#EXTENSÕES 
 
 - **Firefox:** Perfectpixel - cria uma transparencia para comparar uma imagem com o site.
 - http://www.welldonecode.com/perfectpixel/
