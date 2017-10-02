@@ -1,0 +1,118 @@
+
+.content-site
+	background url(../img/bg-content.jpg) repeat
+.box-slider
+	margin 20px 0
+	.slider
+		width: 100%;
+		height: 340px;
+		float: left;
+		position: relative;
+		li
+			display inline-block
+			float left
+	.slider-left
+		width 672px
+		float left
+		overflow hidden
+		a
+			display block
+			position relative
+			.content
+				background-color #131313
+				position absolute
+				bottom 1px 
+				left 0 
+				right 0
+				width 400px
+				padding 20px
+				text-align center
+				margin 0 auto
+				.titulo
+					color $branco
+					font-size 40px
+					font-family $fm-slider
+				.sub-titulo
+					color $azul
+					font-size 20px
+					font-family $fm-slider
+			img
+				-webkit-transform: scale(1);
+				-moz-transform: scale(1);
+				-ms-transform: scale(1);
+				-o-transform: scale(1);
+				transform: scale(1);
+				-webkit-transition: .3s;
+				-moz-transition: .3s;
+				-ms-transition: .3s;
+				-o-transition: .3s;
+				transition: .3s
+			&:hover img
+				-webkit-transform: scale(1.1);
+				-moz-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				-o-transform: scale(1.1);
+				transform: scale(1.1);
+				-webkit-transition: .3s;
+				-moz-transition: .3s;
+				-ms-transition: .3s;
+				-o-transition: .3s;
+				transition: .3s
+
+	.slider-right
+		width 427px
+		float right
+		.item
+			width 100%
+			height 161px
+			overflow hidden
+			position relative
+			&:nth-child(1)
+				margin-bottom 11px
+			a
+				display block
+				.content 
+					background-color #131313
+					position absolute
+					bottom 1px 
+					width 300px
+					padding 20px
+					text-align center
+					.titulo
+						color $branco
+						font-size 24px
+						font-family $fm-slider
+					.sub-titulo
+						color $azul
+						font-size 15px
+						font-family $fm-slider
+				img
+					-webkit-transform: scale(1);
+					-moz-transform: scale(1);
+					-ms-transform: scale(1);
+					-o-transform: scale(1);
+					transform: scale(1);
+					-webkit-transition: .3s;
+					-moz-transition: .3s;
+					-ms-transition: .3s;
+					-o-transition: .3s;
+					transition: .3s
+				&:hover img
+					-webkit-transform: scale(1.1);
+					-moz-transform: scale(1.1);
+					-ms-transform: scale(1.1);
+					-o-transform: scale(1.1);
+					transform: scale(1.1);
+					-webkit-transition: .3s;
+					-moz-transition: .3s;
+					-ms-transition: .3s;
+					-o-transition: .3s;
+					transition: .3s
+			&:nth-child(1) a .content 
+				right 1px
+				text-align right
+			&:nth-child(2) a .content 
+				left 2px
+				text-align left
+
+					

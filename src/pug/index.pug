@@ -1,2 +1,40 @@
-include ./includes/header.pug
+include ./core/variaveis.pug
+doctype html
+html(lang="pt-BR")
+	head
+		title= titulosite
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="description" content="")
+		meta(name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=2, initial-scale=1.0")
+		link(rel="shortcut icon" href="favicon.png")
+
+		//- ==================================================
+		//- Stylesheets
+		//- ==================================================
+
+		link(rel="stylesheet" href="css/style.css")
+		link(rel="stylesheet" href="css/reset.css")
+		link(rel="stylesheet" href="css/fonts/font.css")
+		link(rel="stylesheet" href="js/bxslider/jquery.bxslider.css")
+
+	body
+		//-include ./organismo/header.pug
+		//- main.content-site
+		//- 	include ./components/slider.pug
+		//- 	include ./components/portfolio.pug
+		//- 	include ./components/sobre.pug
+		//- 	include ./components/contato.pug
+		//- include ./components/footer.pug
+
+
+	  
+		//- ==================================================
+		//- Scripts
+		//- ==================================================
+
+		script(src='js/jquery-2.2.4.min.js')
+		script(src='js/bxslider/jquery.bxslider.min.js')
+		script(src='js/modernizr.js')
+		script(src='js/funcoes.js')
 

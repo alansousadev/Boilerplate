@@ -1,67 +1,14 @@
+// @import 'core/variaveis.styl'
+// @import 'core/base.styl'
 
-@import 'helpers/variaveis.styl'
-@import 'helpers/mixins.styl'
-@import 'helpers/base.styl'
+// @import 'components/header.styl'
+// @import 'components/slider.styl'
+// @import 'components/portfolio.styl'
+// @import 'components/sobre.styl'
+// @import 'components/contato.styl'
+// @import 'components/footer.styl'
+// @import 'components/media.styl'
 
-// 
-// 1. Spaces 
-// --------------------------------------------------
 
-// 
-// 2. Media Queries 
-// --------------------------------------------------
+
   
-$screen-sm   = 768px  // Small screen / tablet   
-$screen-md   = 992px  // Medium screen / desktop   
-$screen-lg   = 1200px // Large screen / wide desktop  
-
-// So media queries don't overlap when required, provide a maximum
-$screen-sm-max  = ($screen-md   - 1)
-$screen-md-max  = ($screen-lg   - 1)
-$screen-lg-max  = ($screen-xlg  - 1)
-
-h1  
-  color $color-bg-header
-  font-size(13px)
-  
-  @media (min-width $screen-sm)
-    font-size(13px)
-    
-  @media (min-width $screen-md)
-    font-size(18px)
-  
-  @media (min-width $screen-lg)
-    font-size(25px)
-  
-
-
-#topo
-  background : url("../img/bg-topo.png") center top;
-  height : 202px;
-  padding : 20px 0 0;
-  position : relative;
-.logo
-  width : 203px;
-  height : 122px;
-  margin : 0 50px 0;
-  display : block;
-  float : left;
-.logo-link
-  background : url("../img/logo.png") left top no-repeat;
-  width : 203px;
-  height : 122px;
-  display : block;
-  font-size : 0;
-#menu
-.menu-list
-  margin-top : 50px;
-  float : left;
-.menu-item
-  display : inline-block;
-.menu-link
-  color : #FFF;
-  margin-right : 20px;
-  padding : 20px;
-  font-family : "din-bold";
-  font-size(25px)
-  text-transform : uppercase;

@@ -1,0 +1,154 @@
+
+
+.topo
+	width 100%
+	height 488px
+	bgu #ccc
+	font-family $exo-lighti
+
+.logo
+	width 100%
+	padding 66px 0 0
+	&-link
+		atom-logo-link()
+	&-titulo
+		margin 0
+	&-descricao
+		margin 0 
+		
+
+.menu
+	menu()
+	height 94px
+	.menu-list
+		width 100%
+		margin-top 33px
+		float left
+		
+	li
+		display inline-block
+	.menu-item
+		display inline-block
+		margin: 5px 19px;
+
+		height 32px
+		position relative
+		&:hover 
+			background-color:#181818;
+			&::after
+				content:"";
+				position: absolute;
+				right: -31px;
+				bottom:0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 32px 32px 0 0;
+				border-color: #181818 transparent transparent transparent;
+			&::before
+				content:"";
+				position: absolute;
+				left: -31px;
+				bottom:0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 0 32px 32px;
+				border-color: transparent transparent #181818 transparent;	
+		&:hover .sub-menu
+			display block
+		.sub-menu
+			display none
+			position absolute
+			left: 50%;
+			transform translateX(-50%)
+			padding-top 49px
+			top 0px
+			z-index 100
+			.submenu-item
+				display block
+			.submenu-link
+				background url(../img/sub-menu.png) no-repeat left center
+				color $branco
+				width 193px
+				height 32px
+				padding 8px
+				font-size 15px
+				font-family $fm-menu
+				display block
+				text-align center
+				&:hover
+					background url(../img/sub-menu-hover.png) no-repeat left center
+	.menu-link
+		color $branco
+		font-size 15px
+		padding 7px 0
+		font-family $fm-menu
+		display block
+		text-align center
+		text-transform uppercase	
+		font-size: 15px
+		@media (min-width $screen-sm)
+			font-size: 20px
+		&.ico1
+			width 21px
+			height 62px
+			margin-right 10px
+			display inline-block
+			vertical-align middle
+			background url(../img/ico-1.png) no-repeat center 18px		
+
+	
+.login
+	width 255px
+	float right
+	.login-link
+		color $azul
+		font-size 17px
+		font-family $fm-menu
+		padding 23px 15px 18px 35px
+		text-transform uppercase
+		vertical-align middle
+		display inline-block
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+		&.ico2
+			background url(../img/ico-3.png) no-repeat left 20px
+			&:hover
+				background url(../img/ico-3hov.png) no-repeat left 20px
+		&.ico3
+			background url(../img/ico-2.png) no-repeat 5px 20px
+			&:hover
+				background url(../img/ico-2hov.png) no-repeat 5px 20px
+		&:hover
+			color $branco
+	.ativo
+		position relative
+		&:hover .box-login
+			display block
+		&:hover a.ico3
+			color: #fff;
+			background: url("../img/ico-2hov.png") no-repeat 5px 20px;
+			
+		.box-login
+			width 260px
+			background-color #fff
+			padding 12px 19px
+			position absolute
+			right 0
+			top 42px
+			z-index 100
+			display none
+			&::before
+				content ""
+				position absolute
+				right 30px 
+				top -6px
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 7px 7px 7px;
+				border-color: transparent transparent #fff transparent;
+

@@ -1,0 +1,338 @@
+.box-left
+	width 760px
+	float left
+	margin-bottom 50px
+	a
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+.topo-padrao
+	background-color #0B0B0B
+	border-bottom 1px solid #2C2C2C
+	.titulo-abas
+		color $branco
+		border-bottom 2px solid transparent
+		padding 14px 10px 12px
+		margin 0 18px
+		font-size 20px
+		font-family $exo-lighti
+		display inline-block
+		cursor pointer
+		
+		&.active
+			color $azul
+			font-family $exo-semiboldi
+			border-bottom 2px solid $azul
+		&:hover
+			color $azul
+			
+	
+.box-noticias
+	padding 0
+	.item-noticias
+		background-color #1F201F	
+		width 100%
+		height 172px
+		position relative
+		margin 15px 0 4px
+		float left
+		&:hover .thumb-noticias::after
+				border-style: solid;
+				border-width: 0px 0px 172px 40px;
+				border-color: transparent transparent #333433 transparent;
+		&:hover .infos-noticias
+			background-color #333433		
+		&:hover .infos-noticias .bt-leiamais
+			color $branco
+		.thumb-noticias
+			width 260px
+			height 172px
+			overflow hidden
+			float left
+			position relative
+			&::after
+				content ""
+				position absolute
+				right 0px 
+				bottom 0
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0px 0px 172px 40px;
+				border-color: transparent transparent #1F201F transparent;
+		.infos-noticias
+			float left
+			height 172px
+			padding 17px 24px
+			width 500px						
+			.titulo
+				color $branco
+				font-size 16px
+				font-family $exo-bold
+				overflow hidden
+				white-space nowrap
+				text-overflow ellipsis
+			p
+				color $cinza
+				margin-top 5px
+				max-height 75px
+				font-size 12px
+				line-height 1.7
+				font-family $exo-regular
+			.info span
+				color $cinza2
+				font-size 12px
+				font-family $exo-regular
+				padding 10px 20px
+				display inline-block
+				&.categoria
+					background url(../img/ico-4.png) no-repeat left center
+				&.data
+					background url(../img/ico-5.png) no-repeat left center
+			.bt-leiamais
+				background url(../img/bt-leiamais.png) no-repeat left center
+				color $azul
+				width 148px
+				height 35px
+				position absolute
+				right 0
+				bottom -10px
+				font-size 16px
+				padding 8px 0 8px 20px
+				font-family $exo-bold
+				display block
+				text-transform uppercase				
+				text-align center
+				&:hover
+					color $branco
+
+
+
+
+
+
+
+
+
+
+.box-melhores
+	margin 20px 0 0
+	.titulo
+		background url(../img/ico-6.png ) no-repeat 10px center
+		padding 30px 0 15px  70px 
+		color $branco
+		font-size 30px
+		font-family $exo-semiboldi
+.box-tops
+	top 10px
+	margin-top 10px
+	width 100%
+	height 296px
+	background url(../img/bg-tops.jpg) no-repeat left top
+
+	.lista-tops
+		width 100%
+		padding 30px 27px
+		height 286px
+	.item-tops
+		width 25%
+		padding 40px 35px
+		float left
+		.titulo-tops
+			color $azul
+			font-size 14px
+			font-family $exo-bold
+			margin-bottom 5px
+		.descricao-tops
+			color $cinza
+			font-size 13px
+			line-height 1.5
+			font-family $exo-regular
+			span
+				font-family $exo-bold
+				margin-right 4px
+	.item-tops + .item-tops
+		background url(../img/borda-1.png) no-repeat left center
+
+
+.slider .bx-wrapper,
+.box-tops .bx-wrapper{
+  margin: 0 auto !important;
+  border: 0 none !important;
+  left: 0 !important;
+  max-width: 100% !important;
+}
+
+.slider .bx-wrapper .bx-viewport,
+.box-tops .bx-wrapper .bx-viewport{
+  box-shadow: none !important;
+  border: 0 !important;
+  left: 0 !important;
+  background: transparent !important;
+}
+
+
+
+
+// direction
+
+.box-tops .bx-controls-direction .bx-prev {
+  width: 28px;
+  height: 38px;
+  background: url("../img/tops-seta-left.jpg") no-repeat center center;
+  font-size: 0;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  z-index 10
+}
+
+.box-tops .bx-controls-direction .bx-next {
+  width: 28px;
+  height: 38px;
+  background: url("../img/tops-seta-right.jpg") no-repeat center center;
+  font-size: 0;
+  position: absolute;
+  top: -6px;
+  right: 0px;
+  z-index 10
+}
+
+
+
+// bx-pager
+
+
+.box-tops #bx-pager {
+	background: url("../img/bg-tops-topo.jpg")repeat-x left top;
+  margin: 0 auto;
+  padding: 0 !important;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  top: -6px !important;
+}
+
+.box-tops #bx-pager li {
+  display: inline-block;
+  position: relative;
+}
+
+
+.box-tops #bx-pager a{
+  margin: 0 8px;
+  position relative
+  display: inline-block;
+
+}
+
+.box-tops #bx-pager a:hover{
+  color: $cinza;
+}
+
+.box-tops #bx-pager a span{
+  color: $branco;
+  font-size 16px
+  font-family $exo-lighti
+  width: 146px !important;
+  padding: 8px;
+  position relative
+  z-index 12
+  display: block;
+}
+
+.box-tops #bx-pager a:hover span{
+  color: $azul;
+	-webkit-transition: color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out;
+	-o-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
+}
+
+.box-tops #bx-pager a.active span{
+  color: $azul;
+  font-family $exo-semiboldi
+}
+
+.box-tops #bx-pager a.active:before {
+	content ""
+	position absolute
+	left -22px
+	bottom 0
+	width 200px
+	height 44px
+	background: url("../img/tops-top-ativo.png")repeat-x left top;
+	background-size 100% 100%
+}
+
+.botoes-tops
+	position relative
+	top -30px
+	left 28px
+	.btn-tops
+		background url(../img/bt-download.png) no-repeat left center
+		background-size 100% 100%
+		color $azul
+		width 188px
+		height 35px
+		margin-right 10px
+		font-size 16px
+		padding 8px 20px 
+		font-family $exo-bold
+		display inline-block
+		text-transform uppercase	
+		&:hover
+			color $branco				
+		.ico1
+			display block
+			background url(../img/ico-11.png) no-repeat 100px center
+		&:hover	.ico1
+				background url(../img/ico-11-hov.png) no-repeat 100px center				
+				
+				
+.box-fc
+	
+	.titulo
+		background url(../img/ico-7.png ) no-repeat left center
+		padding 20px 0 20px  70px 
+		color $branco
+		font-size 30px
+		font-family $exo-semiboldi			
+	.lista-fc
+		padding 13px 14px
+		background-color #0C0C0C
+	.item-fc
+		display inline-block
+		margin 0 6px
+		text-align center
+		.thumb
+			width 88px
+			height 88px
+			overflow hidden
+			border-radius 50%
+		p
+			color $branco
+			font-size 14px
+			font-family $exo-bold
+			margin 5px 0
+	.botoes-fc
+		background url(../img/bg-tops-topo.jpg) repeat-x left top
+		height 38px
+		.btn-fc			
+			font-size 16px
+			font-family $exo-lighti
+			color $branco
+			margin 0 10px 0 20px
+			padding 8px 12px
+			display inline-block
+			
+			&:hover
+				background url(../img/btn-fc-hover.jpg) repeat-x left top
+			span 
+				width 6px
+				height 9px
+				display inline-block
+				margin-right 5px
+				background url(../img/ico-12.png) no-repeat left center
