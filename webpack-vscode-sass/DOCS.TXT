@@ -1,7 +1,8 @@
-instalar dependencias npm/node npm install
 
-gulp - rodar servidor src e  para criar a pasta front/dist e copiar os .html
-gulp comp - para copiar todos arquivos do src/assets para a pasta front/dist
+baixar e instalar dependencias npm install
+
+npm start - iniciar o modo de desennvolvimento
+npm run build - para compilar/copiar tudo minificado e compactado.
 
 
 estrutura src/
@@ -50,16 +51,11 @@ front
 
 
 
-1- recorte psd 
-2- variaveis cor, font. texto(as vezes)
-3- blocks html e css de cada block junto.. com medias queries com pouco alinhamento
-4- uso pixelperfect e vou alinhando tudo denovo desk e mobile já sai quase 100%
-5- reviso
 
-quero deixar
-1- recorte psd 
+1- recorte psd / zeplin
 2- variaveis cor, font. texto(as vezes)
-3- blocks html e css.. com medias queries com pouco alinhamento 100%
+3- todos os blocos de html com metodologia BEM.
+4- todo css com medias queries checando mobile e desktop
 5- reviso
 
 
