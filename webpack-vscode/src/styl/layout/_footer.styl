@@ -1,0 +1,122 @@
+
+.rodape
+    box-shadow 0px 14px 0 0 rgba(0, 0, 0, 0.1)
+    background-image linear-gradient(to bottom, #410a48, #bd298e)
+
+    &--container
+        display: flex
+        justify-content: space-between
+        padding-top 35px
+        padding-bottom 35px
+        @media (max-width $screen-md)
+            flex-wrap: wrap
+            padding-top 35px
+            padding-bottom 35px
+            justify-content: space-around
+            align-items: flex-end
+        @media (max-width $screen-sm)
+            flex-direction: column
+            align-items: center
+            text-align: center
+            padding-bottom: 25px;
+    &__item
+        @media (max-width $screen-md)
+            max-width: 40%
+
+        @media (max-width $screen-sm)
+            max-width: 100%
+        &.item1
+            max-width: 220px
+            @media (max-width $screen-md)
+                margin-top 10px
+        &.item2
+            max-width: 265px
+            text-align: center
+            @media (max-width $screen-md)
+                margin-top 10px
+        &.item3
+            max-width: 380px
+            text-align: center
+            @media (max-width $screen-md)
+                margin-top 10px
+    &__logo
+        background url(./../assets/img/logo.png) left top no-repeat
+        width 210px
+        height 108px
+        margin-top 50px
+        @media (max-width $screen-sm)
+            margin 0 auto
+            background-size auto 60px
+            width 122px
+            height 60px
+
+    &__titulo
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.75;
+        color: $branco;
+        margin 25px 0 15px
+        @media (max-width $screen-sm)
+            margin 10px 0 5px
+
+    &__link
+        font-size 16px
+        line-height 1.75
+        color $branco
+        display inline-block
+        transition: .3s ease-out;
+        &:hover
+            color $cor-padrao22
+            transition: .3s ease-out;
+        &::before
+            content "•"
+            color $cor-padrao22
+            margin-right 5px
+    &__descricao
+        font-size 16px
+        line-height 1.75
+        color $branco
+    &__email
+        font-size 16px
+        font-weight 800
+        line-height 1.75
+        text-align left
+        color $cor-padrao22
+
+    .thumb__pagamento
+        width 380px
+        height 56px
+        border-radius 10px
+        background url(./../assets/img/ico-cartoes.jpg) left top no-repeat
+        margin-bottom 15px
+        @media (max-width $screen-sm)
+            background-size auto 40px
+            width 272px
+            height 40px
+            margin 0 auto 15px
+    .thumb__seguro
+        width 252px
+        height 64px
+        background url(./../assets/img/ico-ssl.png) left top no-repeat
+        margin 0 auto
+        @media (max-width $screen-sm)
+            background-size auto 47px
+            width 185px
+            height 47px
+            margin 0 auto
+
+    .copiryght
+        background-color $branco
+        padding 25px 0
+        text-align: center
+        border-top 14px solid #e5e5e5
+        @media (max-width $screen-sm)
+            border-top 8px solid #e5e5e5
+            padding 15px 0
+
+        p
+            font-size 16px
+            color #272727
+            .copy--destaque
+                font-weight bold
+                color $cor-padrao11
