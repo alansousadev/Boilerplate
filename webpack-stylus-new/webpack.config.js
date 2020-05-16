@@ -14,6 +14,12 @@ const copiar = [
   {from: './src/favicon.png', to: './'},
 ];
 
+module.exports = {
+  src: path.resolve(__dirname, '../src'), // source files
+  build: path.resolve(__dirname, '../dist'), // production build files
+  static: path.resolve(__dirname, '../public'), // static files to copy to build folder
+}
+
 const commonconfig = {
   entry: {
     app: "./src/assets/js/index.js",
@@ -115,7 +121,7 @@ const production = () => {
 
 const development = () => {
   commonconfig.devServer = {
-    contentBase: "./dist",
+    contentBase: paths.build,
     port: 3000,
     compress: true,
     open: true,
