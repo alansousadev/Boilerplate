@@ -1,5 +1,8 @@
-//components
 
+//components
+#content-site
+  @media (max-width $screen-md)
+    overflow-y hidden
 .sec
   padding 50px 0
   @media (max-width $screen-sm)
@@ -10,41 +13,51 @@
     @media (max-width $screen-sm)
       // margin-bottom 20px
   .sec__titulo
-    font-family Raleway
-    font-size 42px
+    text-shadow 0px 3px 0 rgba(152, 152, 152, 0.3)
+    font-size 36px
     font-weight 800
-    line-height 1.15
-    text-align center
-    color $cor-padrao2
+    // text-align center
+    // font-weight 800
+    // line-height 1.15
+    // color $cor-padrao2
+    margin-bottom 10px
+    @media (max-width $screen-md)
+      font-size 28px
     @media (max-width $screen-sm)
       fs 20px
+      margin-bottom 5px
 
   .sec__subtitulo
-    color $cor-padrao
+    font-size 18px
+    font-weight bold
+    // text-align center
+    // font-weight 800
+    // line-height 1.15
+    // color $cor-padrao2
+    margin-bottom 40px
+    @media (max-width $screen-sm)
+      margin-bottom 15px
+      font-size 15px
 
 
   .sec__descricao
-    font-family Raleway
-    font-size 18px
-    line-height 2.33
-    color $preto
-    &--destaque
-      color $cor-padrao11
+    font-size 16px
+    font-weight 300
+    line-height 1.69
+    margin-bottom 25px
     @media (max-width $screen-sm)
+      margin-bottom 5px
+
+    // line-height 2.33
+    // color $preto
+    // &--destaque
+    //   color $cor-padrao
+    // @media (max-width $screen-sm)
       // fs 18px
-      line-height 1.4
-
-
-
-
-
-
-
-#content-site
-  overflow-y hidden
+      // line-height 1.4
 
 .box__btn
-  margin 10px 0
+  margin 5px 0
   @media (max-width $screen-sm)
     max-width: 360px
     min-width: 320px
@@ -52,58 +65,39 @@
     margin: 10px auto 0;
   .btn
     color: $branco;
-    text-shadow 0px 3px 0 rgba(0,0,0,0.2)
-    border-radius 6px
-    box-shadow 0px 5px 0 0 rgba(0, 0, 0, 0.2)
-    background-image linear-gradient(to top, #12aa15, #bed631)
-    font-size 28px
-    font-weight 900
-    line-height 0.93
-
-    padding: 25px 75px 22px 25px
+    text-shadow 0px 3px 0 rgba(11, 98, 33, 0.8)
+    border-radius 35px
+    box-shadow 0px 4px 0 0 #156528
+    background-image linear-gradient(to bottom, #49c319, #247c3b)
+    font-family BebasNeue
+    font-size 44px
+    // font-weight 700
+    font-style: italic
+    padding: 15px 46px 13px
+    line-height: 1;
     display: inline-block
-    position relative
     transition 0.3s
-    height 71px
-    &::before
-      content ""
-      position absolute
-      top calc(50% - 13px)
-      right 20px
-      width 41px
-      height 30px
-      background url(./../assets/img/seta-btn.png)left top no-repeat
-      @media (max-width $screen-sm)
-        background url(./../assets/img/seta-btn.png)left top no-repeat
-        background-size auto 22px
-        width 30px
-        height 22px
-        top calc(50% - 10px)
-        right: 20px;
+    @media (max-width $screen-md)
+      padding: 15px 25px 13px
     &:hover
       transition 0.3s ease-out
       transform: scale(1.04);
     @media (max-width $screen-sm)
-      fs 18px
+      box-shadow 0px 4px 0 0 #455800
+      fs 28px
       min-width 100%
       max-width 100%
-      padding: 0px;
-      height: 49px;
+      padding: 12px 0 10px;
+      // height: 49px;
       display: flex
       align-items: center
       justify-content: center
 
 
+
 .box__btn.btn--center
     display flex
     justify-content: center
-.box__btn.btn--right
-    display flex
-    justify-content: flex-end
 
-.linha
-  background url(./../assets/img/dots-red.png) left top repeat-x
-  height 2px
-  position: absolute
-  left 135px
-  top 70px
+
+

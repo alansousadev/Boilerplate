@@ -1,13 +1,14 @@
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require('copy-webpack-plugin');
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const copiar = [
-  {from: './src/assets/fonts/', to: './assets/fonts'},
-  {from: './src/favicon.png', to: './'},
-];
+// const copiar = [
+  // {from: './src/assets/images/', to: './assets/images'},
+  // {from: './src/assets/fonts/', to: './assets/fonts'},
+  // {from: './src/favicon.png', to: './'},
+// ];
 
 module.exports = {
   entry: {
@@ -20,24 +21,29 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
 
+  // resolve: {
+  //   alias: {
+  //     images: path.resolve(__dirname, 'src/images'),
+  //   }
+  // },
+
   module: {
     rules: [
-      {
-        test: /\.(styl|css)$/,
-        // test: /\.s[ac]ss$/,
-        exclude: /node_modules/,
-        use: [
-          "style-loader",
-          MiniCssExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: { sourceMap: true,  importLoaders: 1 },
-          },
-          // modules: true, linha acima
-          { loader: "postcss-loader", options: { sourceMap: true } },
-          { loader: "stylus-loader", options: { sourceMap: true } },
-        ],
-      },
+      // {
+      //   test: /\.(styl|css)$/,
+      //   // test: /\.s[ac]ss$/,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     "style-loader",
+      //     MiniCssExtractPlugin.loader,
+      //     {
+      //       loader: "css-loader",
+      //       options: { sourceMap: true },
+      //     },
+      //     { loader: "postcss-loader", options: { sourceMap: true } },
+      //     { loader: "stylus-loader", options: { sourceMap: true } },
+      //   ],
+      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -50,31 +56,25 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        loader: "pug-loader",
-      },
-      {
-        // test: /\.(woff|woff2|eot|ttf|otf)$/,
-        // use: [
-        //   {
-        //     loader: "file-loader",
-        //     options: {
-        //       limit: 8192,
-        //       name: "[path][name].[ext]",
-        //     },
-        //   },
-        // ],
+        use: [
+          { loader: 'html-loader', options: { minimize: false,  }, },
+          { loader: 'pug-html-loader', options: { pretty: true,  data: { }, }, },
+        ],
       },
     ],
   },
 
   plugins: [
+    // new CopyPlugin(copiar),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       // title: "test pug",
+      favicon: "./src/favicon.png",
       filename: "index.html",
       // template: "./src/pug/pages/index.pug",
       template: "./src/pug/index.pug",
       chunks: ["app"],
+      // minify: false
       // template: './src/index.html'
     }),
     new HtmlWebpackPlugin({
@@ -82,6 +82,5 @@ module.exports = {
       template: "./src/pug/index2.pug",
       chunks: ["app"],
     }),
-    new CopyPlugin(copiar)
   ],
 };
