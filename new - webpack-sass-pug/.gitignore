@@ -1,0 +1,7 @@
+# dependencies
+/node_modules
+/front
+/dist
+/src1
+**/.vscode
+**/.DS_Store

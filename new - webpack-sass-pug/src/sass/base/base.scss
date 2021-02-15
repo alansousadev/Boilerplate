@@ -1,0 +1,94 @@
+body
+html {
+  overflow-x:hidden;
+}
+
+body {
+  font-family: 'Raleway',
+  sans-serif;
+  font-size: responsive 16px 25px;
+  color: $black;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  // vertical-align: top;
+  margin: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.container {
+  max-width : 480px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (min-width: $screen-sm) {
+    max-width: 720px;
+  }
+  @media (min-width: $screen-md) {
+    max-width : 990px;
+  }
+  @media (min-width: $screen-lg) {
+    max-width : 1170px;
+  }
+  @media (min-width: $screen-xlg) {
+    max-width : 1280px;
+  }
+}
+
+.hidden-lg {
+  display: none !important;
+}
+@media (min-width: $screen-md) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: $screen-sm) {
+  .hidden-sm {
+    display: none !important;
+  }
+  .visible-sm,
+  .hidden-lg {
+    display: block !important;
+  }
+}
+
+
+.text-hide {
+  font: 0/0 a;
+  display: block;
+  color: transparent;
+  border: 0;
+  background-color: transparent;
+  text-shadow: none;
+}

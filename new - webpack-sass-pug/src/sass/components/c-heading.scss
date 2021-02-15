@@ -1,0 +1,52 @@
+//components
+
+#content-site {
+  overflow: hidden;
+}
+
+.sec {
+  padding: $space-xs 0;
+
+  @media (min-width: $screen-md) {
+    padding: $space-md 0;
+  }
+
+
+  &__header {
+    margin-bottom: $space-xs;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: $space-md;
+    }
+  }
+
+
+
+
+  &__title {
+    font-size: responsive 22px 42px;
+    color: $dark-purple;
+    font-weight: 400;
+
+    &--destaque {}
+  }
+
+  &__description {
+    font-family: Gotham;
+    font-size: 16.5px;
+    font-weight: 300;
+    margin-top: .4rem;
+
+    @media (min-width: $screen-md) {
+      line-height: 1.33;
+      margin-top: .8rem;
+    }
+  }
+
+  &--center {
+    text-align: center;
+
+  }
+
+
+}

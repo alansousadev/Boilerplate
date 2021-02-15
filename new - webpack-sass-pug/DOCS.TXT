@@ -1,0 +1,97 @@
+
+baixar e instalar dependencias npm install
+
+npm run dev - iniciar o modo de desennvolvimento
+npm run build - para compilar/copiar tudo minificado e compactado.
+
+
+estrutura src/
+src
+	assets
+		css
+		fonts
+		images
+		js
+	pug
+		base
+			doctype
+			scripts
+			variaveis
+		components
+		layout
+		pages
+	scss
+		base 
+			alias
+			base
+      fonts
+			includes
+			mixins
+      palettes
+			variables
+		components - blocks extras/ funcções
+		layout     - todos blocos das paginas ( header,main,footer etcc.)
+		pages      - paginas do site faz a chamada para os components do layout
+		style.scss     - arquivo principal css faz chamada para as paginas/pages
+
+	favicon
+	index.html
+
+
+estrutura front/dist (compilado)
+
+front
+	assets
+		images
+		fonts
+		css
+		js
+	favicon
+	index.html
+
+
+
+metodo de trabalho
+1- recorte psd / zeplin
+2- variaveis cor, font. texto(as vezes)
+3- todos os blocos de html com metodologia BEM.
+4- todo css com medias queries checando mobile e desktop
+5- reviso
+
+
+plugins vscode 15-02-2021 LEMBRAR EXTENSÃO SETTING SYNC
+
+GitLens — Git supercharged - https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+
+advanced-new-file - https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file
+
+Auto Rename Tag - https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+
+AutoFileName - https://marketplace.visualstudio.com/items?itemName=JerryHong.autofilename
+
+Beautify - https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify
+
+Bracket Pair Colorizer - https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer
+
+Code Runner - https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
+
+Color Highlight - https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
+
+CSS Peek - https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+
+Dracula Official - https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula
+
+EditorConfig for VS Code - https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+
+HTML Boilerplate - https://marketplace.visualstudio.com/items?itemName=sidthesloth.html5-boilerplate
+
+language-stylus - https://marketplace.visualstudio.com/items?itemName=sysoev.language-stylus
+
+Live Server - https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+Material Icon Theme - https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+
+Path Intellisense - https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
+
+pug - https://marketplace.visualstudio.com/items?itemName=amandeepmittal.pug
+
